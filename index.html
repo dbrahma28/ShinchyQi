@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwimu's 3D Portfolio</title>
+    <style>
+        body { font-family: Arial; background: #fff8e7; text-align: center; }
+        h1 { font-size: 2.5rem; animation: move 3s infinite alternate; }
+        @keyframes move { from {letter-spacing: 2px;} to {letter-spacing: 10px;} }
+        .gallery img { width: 300px; margin: 20px auto; display: none; }
+        .gallery img.active { display: block; animation: fadeIn 1s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <h1>Dwimu Rani Brahma</h1>
+    <div class="gallery">
+        <img src="images/crochet_1.jpg" class="active" />
+        <img src="images/crochet_2.jpg" />
+        <img src="images/crochet_3.jpg" />
+    </div>
+    <script>
+        let current = 0;
+        const images = document.querySelectorAll(".gallery img");
+        setInterval(() => {
+            images[current].classList.remove("active");
+            current = (current + 1) % images.length;
+            images[current].classList.add("active");
+        }, 3000);
+    </script>
+</body>
+</html>
