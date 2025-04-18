@@ -1,108 +1,151 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dwimu Rani Brahma | Portfolio</title>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dwimu Rani Brahma</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #fff8e7; color: #333; }
-    header { padding: 2rem; text-align: center; background: #e0d0ff; position: relative; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffbea;
+      color: #333;
+    }
+
     h1 {
-      font-size: 3rem;
-      animation: glow 2s ease-in-out infinite alternate;
-      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 42px;
+      margin: 30px 0 10px;
+      animation: float 3s ease-in-out infinite;
     }
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #ccc, 0 0 20px #d5aaff; }
-      to { text-shadow: 0 0 20px #aa88ff, 0 0 30px #7744ff; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
     }
-    .speech-bubble {
-      background: #fff;
-      border-radius: .4em;
-      padding: 1em;
-      max-width: 300px;
-      margin: 1em auto;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    h2 {
+      font-size: 28px;
+      color: #4B0082;
+      text-align: center;
+      margin-top: 50px;
     }
-    section { padding: 2rem; }
-    .carousel img { display: none; width: 300px; border-radius: 10px; }
-    .carousel img.active { display: block; margin: 0 auto; animation: fadeIn 1s; }
-    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
-    .about, .projects { margin-top: 2rem; padding: 1rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .about-tech { background: #f0eaff; }
-    .about-creative { background: #fff0f0; margin-top: 2rem; }
-    .projects-tech, .projects-crochet { margin-top: 1rem; }
-    form { max-width: 400px; margin: 2rem auto; padding: 1rem; background: #e8f4ff; border-radius: 10px; }
-    input, textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 6px; border: 1px solid #ccc; }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      padding: 0 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .flex-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+
+    .crochet-gallery {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .crochet-gallery img {
+      width: 280px;
+      height: auto;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 3s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+
+    form {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #d0e8ff;
+      border-radius: 12px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4B0082;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #372060;
+    }
   </style>
 </head>
 <body>
 
-<header>
   <h1>Dwimu Rani Brahma</h1>
-  <!-- Welcome Cartoon Girl -->
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yFHnzUoH0D.json"
-  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-</lottie-player>
-  <div class="speech-bubble">Hi, I'm Dwimu! Welcome to my world of cybersecurity and creativity.</div>
-</header>
 
-<section class="about about-tech">
-  <!-- Girl Using Computer -->
-<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_P8it6YD4ix.json"
-  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-</lottie-player>
-  <h2>About Me – Cybersecurity</h2>
-  <p>I'm a BCA student passionate about cybersecurity and ethical hacking. I explore digital forensics, open-source intelligence, and Python programming to build safer technology solutions.</p>
-</section>
-
-<section class="projects projects-tech">
-  <h2>Technical Projects</h2>
-  <ul>
-    <li>Game: Cyber Escape - A mini puzzle game built with JavaScript.</li>
-    <li>Website: Security 101 - A beginner-friendly cybersecurity tips site.</li>
-  </ul>
-</section>
-
-<section class="about about-creative">
-  <!-- Girl Crocheting -->
-<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_10181691.json"
-  background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-</lottie-player>
-  <h2>About Me – Crochet & Cooking</h2>
-  <p>Beyond the screen, I love creating handmade crochet pieces and exploring different recipes. Crafting and cooking bring balance and creativity into my life.</p>
-</section>
-
-<section class="projects projects-crochet">
-  <h2>Crochet Projects</h2>
-  <div class="carousel">
-    <img src="Images/crochet_1.jpg" class="active">
-    <img src="Images/crochet_2.jpg">
-    <img src="Images/crochet_3.jpg">
+  <div class="flex-section">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yFHnzUoH0D.json"
+      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
+    </lottie-player>
   </div>
-</section>
 
-<section class="contact">
+  <h2>About Me – Technical</h2>
+  <div class="flex-section">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_P8it6YD4ix.json"
+      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
+    </lottie-player>
+    <p>I am Dwimu Rani Brahma, a BCA 2nd-year student and a passionate cybersecurity learner. I’m gaining experience through hands-on technical projects including websites, games, and OSINT. I’m dedicated to staying up-to-date with the latest tech trends and aspire to contribute professionally in this field.</p>
+  </div>
+
+  <h2>Technical Projects</h2>
+  <p style="text-align: center;">Below are a few sample works representing my technical skills in web and game development:</p>
+  <ul style="text-align: center; list-style-type: none; padding: 0;">
+    <li><a href="#">Game 1: Cyber Runner</a></li>
+    <li><a href="#">Website 2: CyberSec Tips</a></li>
+    <li><a href="#">Website 3: OSINT Tools Showcase</a></li>
+  </ul>
+
+  <h2>About Me – Crochet & Cooking</h2>
+  <div class="flex-section">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_10181691.json"
+      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
+    </lottie-player>
+    <p>Besides tech, I’m a creative soul! I love crocheting beautiful crafts and cooking delightful meals. Crafting with yarn and creating handmade products has always brought me peace and joy. I also enjoy presenting these creations as part of my creative portfolio.</p>
+  </div>
+
+  <h2>Crochet Projects</h2>
+  <div class="crochet-gallery">
+    <img src="images/crochet1.jpg" alt="Crochet 1">
+    <img src="images/crochet2.jpg" alt="Crochet 2">
+    <img src="images/crochet3.jpg" alt="Crochet 3">
+  </div>
+
   <h2>Contact Me</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="4" placeholder="Your Message"></textarea>
+  <form action="https://formspree.io/f/your-id-here" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
     <button type="submit">Send</button>
   </form>
-</section>
-
-<script>
-  let index = 0;
-  const images = document.querySelectorAll(".carousel img");
-  setInterval(() => {
-    images[index].classList.remove("active");
-    index = (index + 1) % images.length;
-    images[index].classList.add("active");
-  }, 3000);
-</script>
 
 </body>
 </html>
