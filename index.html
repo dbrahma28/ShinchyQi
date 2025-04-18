@@ -1,101 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_dkwXlNcccF.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dwimu Rani Brahma | Portfolio</title>
+  <title>Dwimu Rani Brahma's Portfolio</title>
+  <!-- Lottie player script -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     body {
+      background-color: #fff4e6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fffbea;
-      color: #333;
+      padding: 0;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      font-size: 42px;
-      margin: 30px 0 10px;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-    }
-
-    h2 {
-      font-size: 28px;
-      color: #4B0082;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      padding: 0 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .flex-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-    }
-
-    .crochet-gallery {
-      text-align: center;
+      font-size: 3rem;
+      color: #874c62;
+      animation: floatText 3s ease-in-out infinite;
       margin-top: 30px;
     }
 
-    .crochet-gallery img {
-      width: 280px;
-      height: auto;
-      margin: 10px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      animation: fadeIn 3s infinite alternate;
+    @keyframes floatText {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
 
-    @keyframes fadeIn {
-      0% { opacity: 0.2; }
-      100% { opacity: 1; }
-    }
-
-    form {
-      max-width: 500px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #d0e8ff;
-      border-radius: 12px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 12px;
-      border: 1px solid #aaa;
-      border-radius: 8px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #4B0082;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #372060;
+    .animation-container {
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -103,52 +37,17 @@
 
   <h1>Dwimu Rani Brahma</h1>
 
-  <div class="flex-section">
-    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yFHnzUoH0D.json"
-      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
+  <div class="animation-container">
+    <lottie-player 
+      src="https://assets5.lottiefiles.com/packages/lf20_dkwXlNcccF.json" 
+      background="transparent" 
+      speed="1" 
+      style="width: 300px; height: 300px;" 
+      loop 
+      autoplay>
     </lottie-player>
+    <p style="font-size: 1.2rem; color: #555;">Welcome to my 3D animated portfolio!</p>
   </div>
-
-  <h2>About Me – Technical</h2>
-  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_cQRG0S4nRh.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-  <div class="flex-section">
-    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_P8it6YD4ix.json"
-      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
-    </lottie-player>
-    <p>I am Dwimu Rani Brahma, a BCA 2nd-year student and a passionate cybersecurity learner. I’m gaining experience through hands-on technical projects including websites, games, and OSINT. I’m dedicated to staying up-to-date with the latest tech trends and aspire to contribute professionally in this field.</p>
-  </div>
-
-  <h2>Technical Projects</h2>
-  <p style="text-align: center;">Below are a few sample works representing my technical skills in web and game development:</p>
-  <ul style="text-align: center; list-style-type: none; padding: 0;">
-    <li><a href="#">Game 1: Cyber Runner</a></li>
-    <li><a href="#">Website 2: CyberSec Tips</a></li>
-    <li><a href="#">Website 3: OSINT Tools Showcase</a></li>
-  </ul>
-
-  <h2>About Me – Crochet & Cooking</h2>
-  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_10181691.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-  <div class="flex-section">
-    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_10181691.json"
-      background="transparent" speed="1" style="width: 250px; height: 250px;" loop autoplay>
-    </lottie-player>
-    <p>Besides tech, I’m a creative soul! I love crocheting beautiful crafts and cooking delightful meals. Crafting with yarn and creating handmade products has always brought me peace and joy. I also enjoy presenting these creations as part of my creative portfolio.</p>
-  </div>
-
-  <h2>Crochet Projects</h2>
-  <div class="crochet-gallery">
-    <img src="images/crochet1.jpg" alt="Crochet 1">
-    <img src="images/crochet2.jpg" alt="Crochet 2">
-    <img src="images/crochet3.jpg" alt="Crochet 3">
-  </div>
-
-  <h2>Contact Me</h2>
-  <form action="https://formspree.io/f/your-id-here" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
-    <button type="submit">Send</button>
-  </form>
 
 </body>
 </html>
